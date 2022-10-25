@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+/* ОБНУЛЕННЯ СТИЛІВ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #0C0B0B;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+h1 {
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+/* ================================== */
+/* HEADER */
+
+.defaul-container {
+    max-width: 1716px;
+    margin: auto;
+}
+
+header {
+    background-color: green;
+}
+
+header .header-nav {
+    display: flex;
+    height: 56px;
+}
+
+header .header-nav ul {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-nav-elements {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+ul.second-menu>li>a {
+    padding: 0 0 0 18px;
+}
+
+ul.second-menu>li:last-child {
+    margin-left: 17px;
+}
+
+ul.second-menu>li:last-child>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 80px;
+    height: 41px;
+    border: 1px solid #F0F0F0;
+}
+
+ul.second-menu>li:nth-last-child(2) {
+    margin-left: 100px;
+}
+
+ul.second-menu>li:first-child>a {
+    margin-right: 10px;
+}
+
+ul.second-menu>li:first-child>a::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 64px;
+    width: 7px;
+    height: 7px;
+    background-color: #FF3C00;
+    border-radius: 50%;
+}
+
+/* ================================== */
+/* FOOTER */
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(181px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+}
+
+.f-iteam p {
+    color: #6A6A6A;
+    font-size: 18px;
+
+}
